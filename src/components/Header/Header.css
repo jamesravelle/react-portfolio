@@ -1,0 +1,29 @@
+nav{
+    background-color:#282828;
+    position:fixed;
+}
+
+nav{
+    color:white;
+}
+
+.nav-link{
+    cursor:pointer;
+}
+
+.navbar-brand{
+    cursor:pointer;
+}
+
+.menu-icons{
+    margin:0 10px;
+    color:white;
+    font-size:22px;
+    transition:all 200ms;
+}
+
+.menu-icons:hover{
+    color:#DFDFDF;
+    font-size:24px;
+    transition:all 200ms;
+}

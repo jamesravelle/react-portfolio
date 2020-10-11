@@ -1,0 +1,22 @@
+.cta{
+    background-color:white;
+    color:black;
+    border:1px solid black;
+    font-weight:bold;
+    padding:5px 15px;
+    width:50%;
+    box-shadow:2px 3px 4px black;
+    transition:all 500ms;
+}
+
+.hover-class{
+    background-color:black;
+    color:white;
+    border:1px solid white;
+    letter-spacing:2px;
+    text-decoration:none;
+}
+
+.buttonWrapper{
+    margin:10px 0;
+}
