@@ -1,5 +1,5 @@
 nav{
-    background-color:#282828;
+    /* background-color:#282828; */
     position:fixed;
 }
 
@@ -9,7 +9,25 @@ nav{
 
 .nav-link{
     cursor:pointer;
+    display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
 }
+
+.nav-link:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .3s ease, background-color .3s ease;
+  }
+
+  .nav-link:hover:after {
+    width: 100%;
+    background:white;
+  }
 
 .navbar-brand{
     cursor:pointer;
@@ -24,6 +42,9 @@ nav{
 
 .menu-icons:hover{
     color:#DFDFDF;
-    font-size:24px;
     transition:all 200ms;
+}
+
+.navbar-brand{
+    font-weight:bold;
 }

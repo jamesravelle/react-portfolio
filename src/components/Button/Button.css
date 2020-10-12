@@ -4,8 +4,8 @@
     border:1px solid black;
     font-weight:bold;
     padding:5px 15px;
-    width:50%;
-    box-shadow:2px 3px 4px black;
+    width:75%;
+    box-shadow:3px 3px 0 black;
     transition:all 500ms;
 }
 

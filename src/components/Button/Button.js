@@ -1,19 +1,29 @@
 import React, {useState} from 'react';
 import "../Button/Button.css"
 
-function Button({children, url}) {
+function Button({children, url, heroUpdate}) {
     const [hoverState, setHover] = useState(false);
+
+    const buttonClick = (url) => {
+        console.log(url);
+        if(url === "projects"){
+            heroUpdate("Projects","300px","projects", false, "#4087FF")
+        }
+        if(url === "websites"){
+            heroUpdate("Websites","300px","websites", false, "#863BFF")
+        }
+    }
 
     return (
         <div className="buttonWrapper">
-            <a href={url}>
                 <button 
                 className={hoverState ? "hover-class cta" : "cta"}
                 onMouseEnter={() => setHover(true)}
-                onMouseLeave={() => setHover(false)}>
+                onMouseLeave={() => setHover(false)}
+                onClick={()=>buttonClick(url)}
+                >
                     {children}
                 </button>
-            </a>
         </div>
     );
   }

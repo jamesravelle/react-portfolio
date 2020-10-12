@@ -1,6 +1,6 @@
 .hero{
     background-color:#282828;
-    color:white;
+    color:white; 
 }
 
 .hero-row{
@@ -13,7 +13,6 @@
     color:#282828;
     padding:20px;
     text-align:center;
-    border-radius:5px;
     transition:all 500ms;
 }
 
@@ -22,3 +21,69 @@
     text-align:center;
     margin:25px 0;
 }
+
+.large-header {
+    position: relative;
+    width: 100%;
+    background: #282828;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+    transition:all 500ms;
+ }
+ 
+ .main-title {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: #F9F1E9;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+ }
+ 
+ .demo .main-title {
+    text-transform: uppercase;
+    font-size: 4.2em;
+    letter-spacing: 0.1em;
+ }
+ 
+ .main-title .thin {
+    font-weight: 200;
+ }
+ 
+ @media only screen and (max-width: 768px) {
+    .demo .main-title {
+       font-size: 3em;
+    }
+ }
+
+ .connect-with-me{
+    transition:all 500ms;
+ }
+
+ .connect-with-me h3{
+    margin-top:30px;
+    font-size:22px;
+ }
+
+ .connect-with-me a{
+   font-size:30px;
+   color:white;
+   padding:0 30px 0 10px;
+ }
+
+ .connect-with-me a:hover{
+   color:#DFDFDF;
+   text-decoration:none;
+   transition:all 200ms;
+ }
+
+ .connect-icon-text{
+    font-size:22px;
+    margin-left:10px;
+ }
+
