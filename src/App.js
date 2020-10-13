@@ -34,8 +34,6 @@ function App() {
       },
     ]
   );
-  const projectIntroText = 
-  `These are some projects I built`
 
   const [websiteState, setWebsiteState] = useState(
     [
@@ -69,8 +67,6 @@ function App() {
       }
     ]
   );
-  const websiteIntroText = 
-  `These are some websites I built`
 
   const [heroState, setHeroState] = useState({
     text: "Welcome",
@@ -101,14 +97,14 @@ function App() {
           bgColor = {heroState.bgColor}
           heroUpdate={heroUpdate}
       />
-        <Section title={projectIntroText} show={heroState.location === "projects" ? true : false}>
+        <Section show={heroState.location === "projects" ? true : false}>
         {
           projectState.map((x,i) => {
             return <Project value={projectState[i]}/>
           })
         }
         </Section>
-        <Section title={websiteIntroText} show={heroState.location === "websites" ? true : false}>
+        <Section show={heroState.location === "websites" ? true : false}>
         {
           websiteState.map((x,i) => {
             return <Project value={websiteState[i]}/>

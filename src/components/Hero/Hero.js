@@ -46,7 +46,6 @@ const connectLinks =
                 <div>
                 <div className="intro" style={{opacity: "0", height:"0"}}>
                     {introText}                            
-                    <Button url={"/projects"}>Click Me!</Button>
                 </div>
                 <div className="connect-with-me"  style={{opacity: "0", height:"0"}}>
                     <h3>Connect With Me:</h3>

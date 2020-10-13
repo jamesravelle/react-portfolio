@@ -14,6 +14,7 @@
     padding:20px;
     text-align:center;
     transition:all 500ms;
+    width:100%;
 }
 
 .hero-title{
@@ -32,6 +33,12 @@
     z-index: 1;
     transition:all 500ms;
  }
+
+ @media (max-width: 576px) { 
+   .large-header {
+    min-height:900px;
+   }
+}
  
  .main-title {
     position: absolute;
@@ -39,10 +46,12 @@
     padding: 0;
     color: #F9F1E9;
     text-align: center;
-    top: 50%;
+    top: 45%;
     left: 50%;
     -webkit-transform: translate3d(-50%, -50%, 0);
     transform: translate3d(-50%, -50%, 0);
+    width:90%;
+    max-width:900px;
  }
  
  .demo .main-title {

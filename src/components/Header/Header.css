@@ -1,6 +1,14 @@
-nav{
+header{
+    background-color:#282828;
+}
+
+.navbar-collapse{
     /* background-color:#282828; */
-    position:fixed;
+    padding:15px;
+}
+
+.navbar-toggler{
+   float:right;
 }
 
 nav{
@@ -47,4 +55,15 @@ nav{
 
 .navbar-brand{
     font-weight:bold;
+}
+
+.menu-icons-wrap{
+    position:absolute;
+    right:10px;
+}
+
+@media (max-width:768px){
+    .menu-icons-wrap{
+        position:relative;    
+    }
 }
