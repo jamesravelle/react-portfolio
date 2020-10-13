@@ -6,13 +6,13 @@ function Header(props) {
     return (
         <header>
           <nav className="navbar navbar-dark navbar-expand-md">
-            <span className="navbar-brand nav-link"  onClick={()=>props.heroUpdate("Welcome!","auto","home", true, "#282828")}>James Ravelle</span>
+            <span className="navbar-brand nav-link"  onClick={()=>props.heroUpdate("Welcome!","700px","home", true, "#282828")}>James Ravelle</span>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div className="navbar-nav">
-                <span className="nav-item nav-link" onClick={()=>props.heroUpdate("Welcome!","1000px","home", true, "#282828")}>Home</span>
+                <span className="nav-item nav-link" onClick={()=>props.heroUpdate("Welcome!","700px","home", true, "#282828")}>Home</span>
                 <span className="nav-item nav-link" onClick={()=>props.heroUpdate("Projects","300px","projects", false, "#4087FF")}>Projects</span>
                 <span className="nav-item nav-link" onClick={()=>props.heroUpdate("Websites","300px","websites", false, "#863BFF")}>Websites</span>
               </div>

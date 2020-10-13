@@ -13,8 +13,10 @@ function Project(props) {
                         <div className="project-description">
                             <h1>{props.value.title}</h1>
                             <p>{props.value.description}</p>
+                            <a href={props.value.liveURL}>
                             <Button url={props.value.liveURL}>Live Application</Button>
-                            {props.value.githubURL ? <Button url={props.value.githubURL}>GitHub</Button> : <div></div>}
+                            </a>
+                            {props.value.githubURL ? <a href={props.value.githubURL}><Button url={props.value.githubURL}>GitHub</Button></a> : <div></div>}
                         </div>
                     </div>
                     <div className={hoverState ? "col-md-6 screenshot-overlay" : "col-md-6"} >
