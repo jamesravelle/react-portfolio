@@ -1,22 +1,41 @@
 .cta{
-    background-color:white;
-    color:black;
-    border:1px solid black;
+    background-color:black;
+    color:white;
+    border:2px solid white;
     font-weight:bold;
     padding:5px 15px;
-    width:75%;
-    box-shadow:3px 3px 0 black;
+    box-shadow:3px 3px 5px black;
     transition:all 500ms;
+    font-size:14px;
+    width:95%;
+    margin-bottom:10px;
 }
 
 .hover-class{
-    background-color:black;
-    color:white;
-    border:1px solid white;
+    background-color:white;
+    color:black;
+    border:2px solid white;
     letter-spacing:2px;
     text-decoration:none;
 }
 
 .buttonWrapper{
-    margin:10px 0;
+    width:100%;
+    padding:5px;
 }
+
+/* // Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... } */
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 1200px) { 
+    .cta{
+        
+    }
+}
+
+/* // Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */

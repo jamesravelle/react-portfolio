@@ -2,24 +2,16 @@ import React, {useState} from 'react';
 import "../Project/Project.css"
 import Button from "../Button/Button"
 
+import Fade from 'react-reveal/Zoom';
+
 function Project(props) {
 
     const [hoverState, setHover] = useState(false);
 
     return (
-                <div className="project-wrapper">
-                <div className="row">
-                    <div className="col-md-6">
-                        <div className="project-description">
-                            <h1>{props.value.title}</h1>
-                            <p>{props.value.description}</p>
-                            <a href={props.value.liveURL}>
-                            <Button url={props.value.liveURL}>Live Application</Button>
-                            </a>
-                            {props.value.githubURL ? <a href={props.value.githubURL}><Button url={props.value.githubURL}>GitHub</Button></a> : <div></div>}
-                        </div>
-                    </div>
-                    <div className={hoverState ? "col-md-6 screenshot-overlay" : "col-md-6"} >
+        <div className="col-sm-6 col-md-6 col-lg-4" style={{marginBottom:"20px"}}>
+            <div className="project-wrapper">
+             <div className={hoverState ? "screenshot screenshot-overlay" : "screenshot"} >
                         <a 
                             onMouseEnter={() => setHover(true)}
                             onMouseLeave={() => setHover(false)}
@@ -28,10 +20,19 @@ function Project(props) {
                             style={{backgroundImage:`url('${props.value.image}')`}}
                         >
                         </a>
-                    </div>
-                    
-                </div>
-            </div>
+             </div>
+             <div className="project-description">
+                            <div className="project-description-text">
+                                <h2>{props.value.title}</h2>
+                                <p>{props.value.description}</p>
+                            </div>
+                                <div className="project-buttons">
+                                    <Button url={props.value.liveURL}>Live</Button>
+                                    {props.value.githubURL ? <a href={props.value.githubURL}><Button url={props.value.githubURL}>GitHub</Button></a> : <div></div>}
+                                </div>
+                        </div>
+          </div>
+        </div>            
     );
   }
   

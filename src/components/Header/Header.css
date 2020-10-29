@@ -1,7 +1,3 @@
-header{
-    background-color:#282828;
-}
-
 .navbar-collapse{
     /* background-color:#282828; */
     padding:15px;
@@ -13,6 +9,10 @@ header{
 
 nav{
     color:white;
+    /* background-color:#282828; */
+    margin-bottom:-59px;
+    position:absolute;
+    z-index:9999;
 }
 
 .nav-link{
@@ -60,10 +60,31 @@ nav{
 .menu-icons-wrap{
     position:absolute;
     right:10px;
+    top:10px;
 }
 
-@media (max-width:768px){
-    .menu-icons-wrap{
-        position:relative;    
-    }
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 10px;
+    z-index:99999;
+    right:10px;
+    background: linear-gradient;
+    background: -webkit-linear-gradient(140deg, rgba(255,66,66,1) 0%, rgba(0,129,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color:white;
+    transition:all 300ms;
+  }
+
+.white-bg{
+    position:fixed;
+    background-color:white;
+    width:180px;
+    height:50px;
+    right:0;
+    top:0;
+    border-radius:0 0 0 5px;
+    box-shadow:1px 1px 5px black;
+    transition:all 300ms;
 }

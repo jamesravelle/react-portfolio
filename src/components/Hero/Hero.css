@@ -1,6 +1,7 @@
 .hero{
-    background-color:#282828;
+    /* background-color:#282828; */
     color:white; 
+    min-height:50vh;
 }
 
 .hero-row{
@@ -11,10 +12,12 @@
 .intro{
     background-color:#F7F7F7;
     color:#282828;
-    padding:20px;
+    padding:30px;
     text-align:center;
     transition:all 500ms;
     width:100%;
+    border:2px solid black;
+    box-shadow:4px 4px 0 black;
 }
 
 .hero-title{
@@ -26,7 +29,9 @@
 .large-header {
     position: relative;
     width: 100%;
-    background: #282828;
+    /* background: #282828; */
+    background: rgb(255,66,66);
+background: linear-gradient(140deg, rgba(255,66,66,1) 0%, rgba(0,129,255,1) 100%);
     overflow: hidden;
     background-size: cover;
     background-position: center center;
@@ -44,7 +49,6 @@
     position: absolute;
     margin: 0;
     padding: 0;
-    color: #F9F1E9;
     text-align: center;
     top: 45%;
     left: 50%;
@@ -52,6 +56,11 @@
     transform: translate3d(-50%, -50%, 0);
     width:90%;
     max-width:900px;
+ }
+
+ .text-shadow{
+    color:white;
+   text-shadow:3px 3px 0 black;
  }
  
  .demo .main-title {
@@ -95,4 +104,14 @@
     font-size:22px;
     margin-left:10px;
  }
+ @media (max-width:767px) and (min-width:576px) {
+   .main-title {
+       margin-top:100px;
+   }
+}​
+ .divider{
+    width:100%;
+    margin-top:-200px;
+ }
+
 

@@ -1,5 +1,10 @@
 .sectionHeading{
     width:100%;
     text-align:center;
-    padding:20px 0;
+    padding:40px 0;
+    background: rgb(255,66,66);
+    background: linear-gradient;
+    background: -webkit-linear-gradient(140deg, rgba(255,66,66,1) 0%, rgba(0,129,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

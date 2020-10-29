@@ -1,0 +1,16 @@
+.popup{
+    position:fixed;
+    top:-50px;
+    right:0;
+    height:50px;
+    width:25%;
+    z-index:9999;
+    background-color:red; 
+    /* background-color:#282828;  */
+    transition:all 300ms;
+} 
+
+.popup-show{
+    top:0;
+    transition:all 300ms;
+}

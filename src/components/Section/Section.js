@@ -3,18 +3,16 @@ import "../Section/Section.css"
 
 function Section({children, title, show}) {
     console.log(show)
-    if(show){
+
         return (
-            <section className="container section-padding portfolio-section">
-                {/* <div className="sectionHeading"><p>{title}</p></div> */}
+            <div style={{padding:"50px"}}>
+            <section className="row row-eq-height">
+                <div className="sectionHeading"><h1>{title}</h1></div>
                         {children}
             </section>
+            </div>
         )
-    } else {
-        return (
-            <div></div>
-        )
-    }
-  }
+    } 
+
   
   export default Section;

@@ -3,6 +3,7 @@
     border:2px solid black;
     box-shadow:4px 4px 0 black;
     margin:20px 0;
+    height:100%;
 }
 
 .screenshot{
@@ -27,18 +28,29 @@
     position:absolute;
     width:80%;
     text-align:center;
-    bottom:45%;
+    top:100px;
+    /* bottom:45%; */
     left:10%;
     z-index:99;
     font-weight:bold;
     font-size:22px;
-    color:#282828;
-    text-shadow:2px 3px 4px white;
+    color:black;
     cursor: pointer;
     transition:all 500ms;
+    background-color:white;
 }
 
 .container-padding{
     padding-left:50px;
     padding-right:50px;
+}
+
+.project-buttons{
+    position:absolute;
+    bottom:0;
+    width:82%;
+}
+
+.project-description-text{
+    margin-bottom:75px;
 }
